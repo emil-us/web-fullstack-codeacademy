@@ -15,7 +15,7 @@ router.get('/new', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     // res.send('Create User')
-    const isValod = false
+    const isValod = true
     if (isValod) {
         users.push({ firstName: req.body.firstName })
         res.redirect(`/users/${users.length - 1 }`)
